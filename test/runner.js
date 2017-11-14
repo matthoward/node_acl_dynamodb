@@ -12,7 +12,7 @@ describe('DynamoDB - Default', function() {
                 region: "us-east-1",
                 apiVersion: "2016-01-07"
             });
-        self.backend = new dynamodbBackend(db, "acl");
+        self.backend = new dynamodbBackend(db, "acl_default");
         done();
     });
 
@@ -31,7 +31,7 @@ describe('DynamoDB - useSingle', function() {
                 region: "us-east-1",
                 apiVersion: "2016-01-07"
             });
-        self.backend = new dynamodbBackend(db, "acl", true);
+        self.backend = new dynamodbBackend(db, "acl_single", true);
         done();
     });
 
